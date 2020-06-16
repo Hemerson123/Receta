@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 $factory->define(Receta::class, function (Faker $faker)
  {
 	$nombreimagen= 'img/'.$faker ->randomElement
-	(['cafe','pan','pastel','pollo']).'.gif';
+	(['cafe','pan','pastel','pollo']).'.jpg';
 
 	$enlace_video= $faker ->randomElement
 	(['https://www.youtube.com/watch?v=EvnZFWnnZ_A',
@@ -18,7 +18,7 @@ $factory->define(Receta::class, function (Faker $faker)
 	  'https://www.youtube.com/watch?v=rWHjialBaX0']);
 
 	$tipo= $faker ->randomElement
-	(['comida','bebida','postre','aperitivo']);
+	(['comida','bebida','postre','merienda']);
 
     return 
     [

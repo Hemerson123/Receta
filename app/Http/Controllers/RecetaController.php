@@ -14,7 +14,11 @@ class RecetaController extends Controller
      */
     public function index()
     {
-        //
+     
+
+      $recetas = Receta::all();
+
+    return view('receta.index')->with(['recetas'=>$recetas]); 
     }
 
     /**
@@ -24,7 +28,7 @@ class RecetaController extends Controller
      */
     public function create()
     {
-        //
+        return view('receta.create');
     }
 
     /**
@@ -35,7 +39,20 @@ class RecetaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         //$request ->validated();
+        $datos= $request-> all();
+
+        if($request ->file('imagen')){
+            $archivo = $request-> file('imagen');
+            $nombrearchivo = $archivo -> getClientOriginalName();
+            $archivo ->move(public_path('img'), $nombrearchivo);
+            $datos['imagen'] = 'img/'. $nombrearchivo;
+        }
+
+            $receta = receta::create ($datos);
+
+        return redirect()->route('recetas.index')
+        ->withSuccess("la receta con id {$receta->id} se ha creado");
     }
 
     /**

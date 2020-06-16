@@ -11,7 +11,7 @@
 <link rel="stylesheet" href={{asset('css/app.css')}}>
 <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
 
-    <title>COCINANDO :´V</title>
+    <title>COCINANDO</title>
 
   </head>
 
@@ -37,7 +37,7 @@
 
   		<a href="{{ route('main') }}" class="text-decoration-none text-dark">
 
-  		<h1 class="text-center">RECETAS DE COCINA</h1>
+  		<h1 class="text-left font-weight-bolder dancing">RECETAS DE COCINA</h1>
 	</a>
 
   	@yield('content')

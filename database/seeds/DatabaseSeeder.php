@@ -12,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $recetas= factory(Receta::class,6) ->create();
+        $recetas= factory(Receta::class,20) ->create();
     }
 }

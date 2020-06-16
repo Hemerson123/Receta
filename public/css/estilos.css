@@ -1,0 +1,42 @@
+
+ body{
+
+    background-image: url('../img/cocinando.jpg'); 
+    
+}
+
+html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                margin: 0;
+            }
+            .full-height {
+                height: 80vh;
+}
+
+.myButton {
+    box-shadow:inset 16px 45px 12px -26px #777777;
+    background-color:#000000;
+    border-radius:42px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:20px 34px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+
+@font-face {
+    font-family: dancing;
+    src:url('/img/fonts/dancing.ttf');
+
+}
+
+.dancing{
+    font-family: "dancing";
+
+}
