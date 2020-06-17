@@ -1,33 +1,34 @@
 
  body{
 
-    background-image: url('../img/cocinando.jpg'); 
+    background-color: #777777;
     
 }
 
 html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #ffffff;
+                color: #000000;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 margin: 0;
+
             }
             .full-height {
                 height: 80vh;
 }
 
 .myButton {
-    box-shadow:inset 16px 45px 12px -26px #777777;
-    background-color:#000000;
+    box-shadow:inset 16px 45px 12px -26px #6eb77f;
+    background-color:#55db46;
     border-radius:42px;
     display:inline-block;
     cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    padding:20px 34px;
+    color:#000000;
+    font-family:dancing;
+    font-size:50px;
+    padding:5px 25px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #b23e35;
+    text-shadow:0px 3px 3px #2d5625;
 }
 
 @font-face {
@@ -39,4 +40,8 @@ html, body {
 .dancing{
     font-family: "dancing";
 
+}
+.img-tabla{
+    width: 100%;
+    max-width: 5rem;
 }

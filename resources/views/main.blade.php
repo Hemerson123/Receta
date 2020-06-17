@@ -3,14 +3,14 @@
 @section('content')
 
 
-<h3 class="text-left mb-2 text-dark dancing font-weight-bolder">PERFECTAS PARA PREPARAR </h3>
+<h1 class="text-center mb-2 text-dark dancing font-weight-bolder display-3">RECETAS DE COCINA</h1>
 
 
-<div class="d-flex justify-content-around full-height align-items-center">
-	<a href="{{route('comida')}}" class="btn btn-secondary myButton">COMIDA</a>
-	<a href="{{route('bebida')}}" class="btn btn-secondary myButton">BEBIDA</a>
-	<a href="{{route('merienda')}}" class="btn btn-secondary myButton">MERIENDA</a>
-	<a href="{{route('postre')}}" class="btn btn-secondary myButton">POSTRE</a>
+<div class="d-flex justify-content-around full-height align-items-center row">
+	<a href="{{route('comida')}}" class="btn btn-secondary myButton">Comida</a>
+	<a href="{{route('bebida')}}" class="btn btn-secondary myButton">Bebida</a>
+	<a href="{{route('merienda')}}" class="btn btn-secondary myButton">Merienda</a>
+	<a href="{{route('postre')}}" class="btn btn-secondary myButton">Postre</a>
 
 
 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Receta;
 use Illuminate\Http\Request;
+use App\Request\RecetaRequest;
 
 class RecetaController extends Controller
 {
@@ -37,7 +38,7 @@ class RecetaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RecetaRequest $request)
     {
          //$request ->validated();
         $datos= $request-> all();
@@ -74,7 +75,7 @@ class RecetaController extends Controller
      */
     public function edit(Receta $receta)
     {
-        //
+        return view('receta.edit')->with(['receta'=>$receta]);
     }
 
     /**
@@ -84,9 +85,27 @@ class RecetaController extends Controller
      * @param  \App\Receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Receta $receta)
+    public function update(RecetaRequest $request, Receta $receta)
     {
-        //
+         $datos =$request->all();
+
+     if($request ->file('imagen'))
+    {
+            $archivo = ($request ->file('imagen'));
+            $nombrearchivo = $archivo -> getClientOriginalName();
+            $archivo ->move(public_path('img'), $nombrearchivo);
+            $datos['imagen'] = 'img/'. $nombrearchivo;
+            File::delete($heroe->imagen);
+        }
+        
+
+
+        $heroe-> update($datos);
+
+            
+        return Redirect() ->route('recetas.index')
+        ->withSuccess("la receta con id {$receta->id} se ha actualizado");
+
     }
 
     /**
@@ -97,6 +116,9 @@ class RecetaController extends Controller
      */
     public function destroy(Receta $receta)
     {
-        //
+        $receta->delete();
+
+        return Redirect() ->route('recetas.index')
+        ->withSuccess("El heroe con id {$receta->id} se ha eliminado");
     }
 }

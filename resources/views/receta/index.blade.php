@@ -8,28 +8,34 @@
 
 
 	<div class="table-responsive shadow">
-		<table class="table-striped border">
+		<table class="table border">
 			<thead class="thead-light">
 				<tr>
-				<th class="  text-center d-md-table-cell">ID</th>
+				<th class="  text-center">Imagen</th>
 				<th class="  text-center">Nombre</th>
-				<th class="  text-center d-md-table-cell">ingredientes</th>
-				<th class="  text-center d-md-table-cell">preparacion</th>
-				<th class="  text-center d-md-table-cell">tipo</th>
-				<th class="  text-center d-md-table-cell">Imagen</th>
+				<th class=" d-none text-center d-md-table-cell">ingredientes</th>
+				<th class=" d-none text-center d-md-table-cell">preparacion</th>
+				<th class="  d-none text-center d-md-table-cell">tipo</th>
+				
 				<th class="  text-center d-md-table-cell">enlace_video</th>
+				<th class="  text-center">acciones</th>
+
 				</tr>
 			</thead>
 			<tbody>
 				@foreach($recetas as $receta)
 <tr>
-	<td class=" d-md-table-cell">{{$receta ->id}}</td>
+	<td >
+		<img src="{{$receta ->imagen}}" class="img-tabla">
+	</td>
 	<td>{{$receta ->nombre}}</td>
-	<td class=" d-md-table-cell">{{$receta ->ingredientes}}</td>
-	<td class=" d-md-table-cell">{{$receta ->preparacion}}</td>
-	<td class=" d-md-table-cell">{{$receta ->tipo}}</td>
-	<td class=" d-md-table-cell">{{$receta ->imagen}}</td>
-	<td class=" d-md-table-cell">{{$receta ->enlace_video}}</td>
+	<td class=" d-none d-md-table-cell">{{$receta ->ingredientes}}</td>
+	<td class=" d-none d-md-table-cell">{{$receta ->preparacion}}</td>
+	<td class=" d-none d-md-table-cell">{{$receta ->tipo}}</td>
+	
+	<td >
+		<a href="{{$receta ->enlace_video}}">Video</a>
+	</td>
 	<td>
 		<a href="{{route('recetas.edit',['receta'=> $receta->id])}}" class="myButton d-block text-center mb-2">
 			<i class="fas fa-edit icono2"></i>

@@ -17,7 +17,7 @@ class MainController extends Controller
 
     public function show (Receta $receta) {
 
-    	return view('receta')-> with (['receta'=> $receta]);
+    	return view('tipo_comida.receta')-> with (['receta'=> $receta]);
     }
 
     public function comida(){

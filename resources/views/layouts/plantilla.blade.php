@@ -17,6 +17,30 @@
 
   <body>
 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" href="{{ route('main') }}" >
+
+    <h5 class="text-left font-weight-bolder dancing">PAGINA PRINCIPAL</h5>
+
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+
+        <a class="nav-link " href="{{ route('recetas.index') }}" >
+
+          <h7 class="text-left font-weight-bolder dancing">AGREGAR</h7>
+        </a>
+     
+    </ul>
+  </div>
+</nav>
   	<div class="container ">
 
        <div class="py-4">
@@ -24,6 +48,7 @@
                     <div class="alert alert-success">
                         {{ session()->get('success') }}
                     </div>
+
                 @endif
 
                 @if(isset($errors) && $errors->any())
@@ -34,11 +59,7 @@
                     </div>
                 @endif
             </div>
-
-  		<a href="{{ route('main') }}" class="text-decoration-none text-dark">
-
-  		<h1 class="text-left font-weight-bolder dancing">RECETAS DE COCINA</h1>
-	</a>
+  	
 
   	@yield('content')
 

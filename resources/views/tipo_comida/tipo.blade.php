@@ -22,7 +22,7 @@
 			<div class="card-footer text-center">
 
 
-			<a href= "#" class="myButton"> Ver Mas
+			<a href="{{ route('receta',['receta'=> $receta-> id ]) }}" class="myButton"> Ver Mas
 			</a>
 		</div>
 	</div>
