@@ -34,7 +34,8 @@
 
 		<div class="form-row ">
 		<label>tipo</label>
-		<select  name="tipo" class="form-control">
+		<select  name="tipo" class="form-control text-dancing">
+ 	    <option value="bebida">BEBIDA</option>
  	    <option value="comida">COMIDA</option>
  	    <option value="bebida">BEBIDA</option>
  	    <option value="merienda">MERIENDA</option>
@@ -48,14 +49,15 @@
 		</div>
 
 		<div>
-			<button type="submit" class="myButton mt-2 ml-4" >
-				Crear
+			<button type="submit" class="myButton2" >
+				Guardar
 			</button>
 
-			<button type="reset" class="btn btn primary mt-2 ml-4">
-				<i class="fas fa-share icono1 mb-2 mr-2"></i>
+			<button type="reset" class=" myButton2">
+				Limpiar
 			</button>
-		<a href="{{route('recetas.index')}}" class="btn btn-danger btn-lg text-light">
+
+		<a href="{{route('recetas.index')}}" class=" myButton2">
 			Atras
 		</a>
 	</form>

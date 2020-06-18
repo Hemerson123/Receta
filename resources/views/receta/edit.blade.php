@@ -12,25 +12,25 @@
 		@method('PUT')
 
 		<div class="form-row">
-		<label>Nombre</label>
+		<label>NOMBRE</label>
 		<input type="text" name="nombre" class="form-control" value="{{$receta->nombre}}" required>
 		</div>
 
 
 		<div class="form-row">
-		<label>ingredientes</label>
+		<label>INGREDIENTES</label>
 		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->ingredientes}}
 		</textarea>
 		</div>
 
 		<div class="form-row">
-		<label>preparacion</label>
+		<label>PREPARACION</label>
 		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->preparacion}}
 		</textarea>
 		</div>
 		
 		<div class="form-row ">
-		<label>tipo</label>
+		<label>TIPO</label>
 		<select  name="tipo" class="form-control">
  	    <option value="comida" selected="@if ($receta->tipo=="comida" ) {'selected'} else{''} @endif ">COMIDA</option>
  	    <option value="bebida" selected="@if ($receta->tipo=="bebida" ) {'selected'} else{''} @endif ">BEBIDA</option>
@@ -40,32 +40,28 @@
 		</div>
 
 		<div class="form-row ">
-		<label>Enlace del Video</label>
+		<label class="m-2">ENLACE DEL VIDEO</label>
 		<input type="text" name="Enlace" class="form-control" value="{{$receta->enlace_video}}" required>
 		</div>
 
 		<div class="form-row">
-		<label class="m-3">Imagen   </label>
+		<label class="m-3">IMAGEN</label>
 		<input type="file" name="imagen" class="form-control-fle m-3" value="{{$receta->imagen}}" required>
-
-
-		
-
-
 		</div>
 
 		<div>
-			<button >
-				guardar
+			<button type="reset" class="myButton2 m-3" >
+				GUARDAR
 			</button>
 
-			<button type="reset" class="btn btn primary mt-2 ml-4">
-				<i class="fab fa-leanpub"></i>
+			<button type="reset" class="myButton2 m-3">
+				LIMPIAR
 			</button>
 
-		<a href="{{route('recetas.index')}}" class="btn btn-danger btn-lg text-light">
-			<i class="fas fa-undo-alt"></i>
+		<a href="{{route('recetas.index')}}" class="myButton2 m-3">
+			VOLVER
 		</a>
+	</div>
 
 			
 		

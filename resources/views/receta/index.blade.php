@@ -2,7 +2,7 @@
 
 @section('content')
 <div >
-	<h1 class="text-center">RECETAS</h1>
+	<h1 class="text-center dancing">RECETAS</h1>
 
 	<a href= "{{route('recetas.create')}}" class="myButton m-3">Crear</a>
 
@@ -37,15 +37,14 @@
 		<a href="{{$receta ->enlace_video}}">Video</a>
 	</td>
 	<td>
-		<a href="{{route('recetas.edit',['receta'=> $receta->id])}}" class="myButton d-block text-center mb-2">
-			<i class="fas fa-edit icono2"></i>
+		<a href="{{route('recetas.edit',['receta'=> $receta->id])}}" class=" myButton1 d-block text-center mb-2">
+			EDITAR
 		</a>
-		<form method="POST" class="d-inline" action="{{route('recetas.destroy',['receta'=>$receta->id])}}">
+		<form method="POST" class=" d-inline" action="{{route('recetas.destroy',['receta'=>$receta->id])}}">
 			@csrf
 			@method('DELETE')
-			<button type="submit" class="myButton d-block text-center mb-2"onclick="return confirm('¿Seguro que quieres elimarlo? text-dark')">
-
-			<i class="fas fa-trash-alt icono"></i>
+			<button type="submit" class=" myButton1 d-block text-center mb-2"onclick="return confirm('¿Seguro que quieres elimarlo? text-dark')">
+				BORRAR
 
 		</button>
 

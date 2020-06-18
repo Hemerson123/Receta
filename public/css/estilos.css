@@ -1,7 +1,7 @@
 
  body{
 
-    background-color: #777777;
+    background-image: url('../img/fondo.jpg');
     
 }
 
@@ -25,8 +25,8 @@ html, body {
     cursor:pointer;
     color:#000000;
     font-family:dancing;
-    font-size:50px;
-    padding:5px 25px;
+    font-size:2rem;
+    padding: 0.5rem;
     text-decoration:none;
     text-shadow:0px 3px 3px #2d5625;
 }
@@ -45,3 +45,31 @@ html, body {
     width: 100%;
     max-width: 5rem;
 }
+.myButton1 {
+    box-shadow:inset 16px 45px 12px -26px #6eb77f;
+    background-color:#00ffe9;
+    border-radius:42px;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:dancing;
+    font-size:15px;
+    padding:5px 25px;
+    text-decoration:none;
+    text-shadow:0px 3px 3px #2d5625;
+}
+
+.myButton2 {
+    box-shadow:inset 16px 45px 12px -26px #dbd530;
+    background-color:#dbd530;
+    border-radius:42px;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:dancing;
+    font-size:15px;
+    padding:5px 25px;
+    text-decoration:none;
+    text-shadow:0px 3px 3px #2d5625;
+}
+
