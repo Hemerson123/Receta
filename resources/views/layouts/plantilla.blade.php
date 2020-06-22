@@ -11,14 +11,14 @@
 <link rel="stylesheet" href={{asset('css/app.css')}}>
 <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
 
-    <title>COCINANDO</title>
+    <title>RECETAS</title>
 
   </head>
 
   <body>
 
 
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
   <a class="navbar-brand" href="{{ route('main') }}" >
 

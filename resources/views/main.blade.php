@@ -4,6 +4,8 @@
 
 
 <h1 class="text-center mb-2 text-dark dancing font-weight-bolder display-3">RECETAS DE COCINA</h1>
+<h3 class="text-center mb-2 text-dark dancing font-weight-bolder display-3">Busca tu receta y crea/guarda a tu lista de recetas</h3>
+
 
 
 <div class="d-flex justify-content-around full-height align-items-center row">
