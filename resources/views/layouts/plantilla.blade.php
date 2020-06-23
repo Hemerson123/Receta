@@ -35,8 +35,18 @@
 
         <a class="nav-link " href="{{ route('recetas.index') }}" >
 
-          <h7 class="text-left font-weight-bolder dancing">AGREGAR</h7>
+          <h7 class="text-left font-weight-bolder dancing">LISTA</h7>
+        
         </a>
+    </li>
+
+<li class="nav-item active">
+  <a class="nav-link " href="{{ route('recetas.create') }}" >
+
+          <h7 class="text-left font-weight-bolder dancing">AGREGAR</h7>
+        
+        </a>
+</li>
      
     </ul>
   </div>

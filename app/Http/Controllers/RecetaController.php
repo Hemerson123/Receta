@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Receta;
 use Illuminate\Http\Request;
-use App\Request\RecetaRequest;
+use App\Http\Requests\RecetaRequest;
 
 class RecetaController extends Controller
 {

@@ -4,21 +4,19 @@
 <div >
 	<h1 class="text-center dancing">RECETAS</h1>
 
-	<a href= "{{route('recetas.create')}}" class="myButton m-3">Crear</a>
-
 
 	<div class="table-responsive shadow">
 		<table class="table border">
 			<thead class="thead-light">
 				<tr>
-				<th class="  text-center">Imagen</th>
-				<th class="  text-center">Nombre</th>
-				<th class=" d-none text-center d-md-table-cell">ingredientes</th>
-				<th class=" d-none text-center d-md-table-cell">preparacion</th>
-				<th class="  d-none text-center d-md-table-cell">tipo</th>
+				<th class="  text-center dancing">Imagen</th>
+				<th class="  text-center dancing">Nombre</th>
+				<th class=" d-none text-center d-md-table-cell dancing">Ingredientes</th>
+				<th class=" d-none text-center d-md-table-cell dancing">Preparacion</th>
+				<th class="  d-none text-center d-md-table-cell dancing">Tipo</th>
 				
-				<th class="  text-center d-md-table-cell">enlace_video</th>
-				<th class="  text-center">acciones</th>
+				<th class="  d-none text-center d-md-table-cell dancing">Video</th>
+				<th class="  text-center dancing">Acciones</th>
 
 				</tr>
 			</thead>
@@ -33,7 +31,7 @@
 	<td class=" d-none d-md-table-cell">{{$receta ->preparacion}}</td>
 	<td class=" d-none d-md-table-cell">{{$receta ->tipo}}</td>
 	
-	<td >
+	<td class=" d-none d-md-table-cell" >
 		<a href="{{$receta ->enlace_video}}">Video</a>
 	</td>
 	<td>
@@ -43,7 +41,7 @@
 		<form method="POST" class=" d-inline" action="{{route('recetas.destroy',['receta'=>$receta->id])}}">
 			@csrf
 			@method('DELETE')
-			<button type="submit" class=" myButton1 d-block text-center mb-2"onclick="return confirm('¿Seguro que quieres elimarlo? text-dark')">
+			<button type="submit" class=" myButton1 d-block text-center mb-"onclick="return confirm('¿Seguro que quieres elimarlo? text-dark')">
 				BORRAR
 
 		</button>
