@@ -59,7 +59,7 @@
 			</button>
 
 		<a href="{{route('recetas.index')}}" class="myButton2 ">
-			VOLVER
+			ATRÁS
 		</a>
 	</div>
 
