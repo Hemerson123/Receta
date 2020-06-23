@@ -43,7 +43,8 @@ html, body {
 }
 .img-tabla{
     width: 100%;
-    max-width: 5rem;
+    max-width: 25rem;
+
 }
 .myButton1 {
     box-shadow:inset 16px 45px 12px -26px #6eb77f;
@@ -53,8 +54,8 @@ html, body {
     cursor:pointer;
     color:#000000;
     font-family:dancing;
-    font-size:15px;
-    padding:5px 25px;
+    font-size:12px;
+    padding:5px 18px;
     text-decoration:none;
     text-shadow:0px 3px 3px #2d5625;
 }
@@ -73,3 +74,12 @@ html, body {
     text-shadow:0px 3px 3px #2d5625;
 }
 
+@media (min-width: 770px) {
+
+.img-tabla{
+    width: 100%;
+    max-width: auto;
+    min-width: 8rem;
+
+}
+}

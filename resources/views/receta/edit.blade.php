@@ -25,8 +25,7 @@
 
 		<div class="form-row dancing">
 		<label>PREPARACIÓN</label>
-		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->preparacion}}
-		</textarea>
+		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->preparacion}}</textarea>
 		</div>
 		
 		<div class="form-row dancing">
@@ -46,20 +45,20 @@
 		</div>
 
 		<div class="form-row dancing">
-		<label class="m-3">IMAGEN</label>
+		<label class="m-1">IMAGEN</label>
 		<input type="file" name="imagen" class="form-control-fle m-3" value="{{$receta->imagen}}" required>
 		</div>
 
-		<div>
-			<button type="reset" class="myButton2 m-3" >
+		<div class="mb-4">
+			<button type="reset" class="myButton2 " >
 				GUARDAR
 			</button>
 
-			<button type="reset" class="myButton2 m-3">
+			<button type="reset" class="myButton2 ">
 				LIMPIAR
 			</button>
 
-		<a href="{{route('recetas.index')}}" class="myButton2 m-3">
+		<a href="{{route('recetas.index')}}" class="myButton2 ">
 			VOLVER
 		</a>
 	</div>

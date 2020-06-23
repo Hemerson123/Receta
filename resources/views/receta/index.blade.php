@@ -12,8 +12,8 @@
 				<th class="  text-center dancing">Imagen</th>
 				<th class="  text-center dancing">Nombre</th>
 				<th class=" d-none text-center d-md-table-cell dancing">Ingredientes</th>
-				<th class=" d-none text-center d-md-table-cell dancing">Preparacion</th>
-				<th class="  d-none text-center d-md-table-cell dancing">Tipo</th>
+				<th class=" d-none text-center d-lg-table-cell dancing">Preparacion</th>
+				<th class="  d-none text-center d-lg-table-cell dancing">Tipo</th>
 				
 				<th class="  d-none text-center d-md-table-cell dancing">Video</th>
 				<th class="  text-center dancing">Acciones</th>
@@ -28,8 +28,8 @@
 	</td>
 	<td>{{$receta ->nombre}}</td>
 	<td class=" d-none d-md-table-cell">{{$receta ->ingredientes}}</td>
-	<td class=" d-none d-md-table-cell">{{$receta ->preparacion}}</td>
-	<td class=" d-none d-md-table-cell">{{$receta ->tipo}}</td>
+	<td class=" d-none d-lg-table-cell">{{$receta ->preparacion}}</td>
+	<td class=" d-none d-lg-table-cell">{{$receta ->tipo}}</td>
 	
 	<td class=" d-none d-md-table-cell" >
 		<a href="{{$receta ->enlace_video}}">Video</a>
