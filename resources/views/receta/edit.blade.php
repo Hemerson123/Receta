@@ -54,7 +54,7 @@
 				GUARDAR
 			</button>
 
-			<button type="reset" class="myButton2 ">
+			<button type="submit" class="myButton2 ">
 				LIMPIAR
 			</button>
 
