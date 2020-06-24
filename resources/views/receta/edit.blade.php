@@ -50,11 +50,11 @@
 		</div>
 
 		<div class="mb-4">
-			<button type="reset" class="myButton2 " >
+			<button type="submit" class="myButton2 " >
 				GUARDAR
 			</button>
 
-			<button type="submit" class="myButton2 ">
+			<button type="reset" class="myButton2 ">
 				LIMPIAR
 			</button>
 
