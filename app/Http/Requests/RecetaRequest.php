@@ -26,8 +26,8 @@ class RecetaRequest extends FormRequest
         return [
 
             'nombre'=> ['required','max:150'],
-            'ingredientes'=> ['required','max:1000'],
-            'preparacion'=> ['required','max:1000'],
+            'ingredientes'=> ['required','max:5000'],
+            'preparacion'=> ['required','max:10000'],
             'enlace_video'=> ['required','max:150'],
             'imagen'=> 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',
         ];

@@ -19,13 +19,13 @@
 
 		<div class="form-row dancing">
 		<label>INGREDIENTES</label>
-		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->ingredientes}}
+		<textarea name="ingredientes" class="form-control" rows="4" required >{{$receta->ingredientes}}
 		</textarea>
 		</div>
 
 		<div class="form-row dancing">
 		<label>PREPARACIÓN</label>
-		<textarea name="descripcion" class="form-control" rows="4" required >{{$receta->preparacion}}</textarea>
+		<textarea name="preparacion" class="form-control" rows="4" required >{{$receta->preparacion}}</textarea>
 		</div>
 		
 		<div class="form-row dancing">
@@ -41,7 +41,7 @@
 
 		<div class="form-row dancing">
 		<label class="m-2">ENLACE VIDEO</label>
-		<input type="text" name="Enlace" class="form-control" value="{{$receta->enlace_video}}" required>
+		<input type="text" name="enlace_video" class="form-control" value="{{$receta->enlace_video}}" required>
 		</div>
 
 		<div class="form-row dancing">

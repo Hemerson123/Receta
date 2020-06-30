@@ -18,7 +18,7 @@ class CreateRecetasTable extends Migration
             $table->timestamps();
             $table->string('nombre');
             $table->string('ingredientes');
-            $table->string('preparacion',1000);
+            $table->string('preparacion',10000);
             $table->string('tipo');
             $table->string('imagen') -> nullable();
             $table->string('enlace_video') -> nullable();
