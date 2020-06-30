@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Receta;
 use Illuminate\Http\Request;
 use App\Http\Requests\RecetaRequest;
+use Illuminate\Support\Facades\File;
 
 class RecetaController extends Controller
 {
