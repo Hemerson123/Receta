@@ -55,7 +55,7 @@
 			</button>
 
 			<button type="reset" class="myButton2 ">
-				LIMPIAR
+				RESTAURAR
 			</button>
 
 		<a href="{{route('recetas.index')}}" class="myButton2 ">
