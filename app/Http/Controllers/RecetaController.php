@@ -101,7 +101,7 @@ class RecetaController extends Controller
         
 
 
-        $heroe-> update($datos);
+        $receta-> update($datos);
 
             
         return Redirect() ->route('recetas.index')
@@ -120,6 +120,6 @@ class RecetaController extends Controller
         $receta->delete();
 
         return Redirect() ->route('recetas.index')
-        ->withSuccess("El heroe con id {$receta->id} se ha eliminado");
+        ->withSuccess("La receta con id {$receta->id} se ha eliminado");
     }
 }
