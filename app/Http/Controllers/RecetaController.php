@@ -96,7 +96,7 @@ class RecetaController extends Controller
             $nombrearchivo = $archivo -> getClientOriginalName();
             $archivo ->move(public_path('img'), $nombrearchivo);
             $datos['imagen'] = 'img/'. $nombrearchivo;
-            File::delete($heroe->imagen);
+            File::delete($receta->imagen);
         }
         
 
